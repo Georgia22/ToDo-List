@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	font-family: Lato;
+	background: url(../img/to-do.jpg) no-repeat center center fixed; 
+  	background-size: cover;
+}
+
+h1 {
+	text-transform: uppercase;
+	background-color: #C85BC8;
+	color: white;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	font-family: Lato;
+	line-height: 40px;
+	height: 40px;
+}
+
+li:nth-child(2n){
+	background-color: #ffffff;
+}
+
+/* select the span from the li */
+li:hover span{
+	width: 40px;
+}
+
+span {
+	background-color: #E32636;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.3s linear;
+}
+
+input {
+	font-size: 18px;
+	background-color: #f7f7f7;
+	color: #C85BC8;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+}
+
+input:focus {
+	background: #ffffff;
+	border: 3px solid #C85BC8;
+	outline: none;
+}
+
+#container {
+	width: 360px;
+	border: 2px solid grey;
+	margin: 5% auto;
+	background-color: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.fa-pencil {
+	float: right;
+}
